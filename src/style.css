@@ -33,7 +33,7 @@ header {
   display: flex;
 }
 
-.nav_list a {
+.nav_link {
   display: block;
   height: 60px;
   line-height: 60px;
@@ -47,15 +47,15 @@ header {
   margin-right: 20px;
 }
 
-.nav_list a:hover {
+.nav_link:hover {
   color: #00acdc;
 }
 
-.nav_list .is-active {
+.nav_link.is-active {
   color: #00acdc;
 }
 
-.nav_list .is-active::after {
+.nav_link.is-active::after {
   content: '';
   background-color: #00acdc;
   height: 4px;
