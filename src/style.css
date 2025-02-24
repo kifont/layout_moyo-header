@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  --blue-color: #00acdc;
+}
+
 body {
   font-family: Roboto, sans-serif;
   font-weight: 500;
@@ -48,21 +52,22 @@ header {
 }
 
 .nav_link:hover {
-  color: #00acdc;
+  color: var(--blue-color);
 }
 
 .nav_link.is-active {
-  color: #00acdc;
+  color: var(--blue-color);
 }
 
 .nav_link.is-active::after {
   content: '';
-  background-color: #00acdc;
+  display: block;
+  background-color: var(--blue-color);
   height: 4px;
   position: absolute;
   left: 50%;
   width: 100%;
-  bottom: -10px;
+  bottom: 0;
   border-radius: 8px;
   transition: all 0.3s ease;
   transform: translateX(-50%);
